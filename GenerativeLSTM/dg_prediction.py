@@ -37,9 +37,12 @@ def call_simod(file_name):
     try:
         source_file = os.path.join('input_files', file_name)
         destination_file = os.path.join('..', 'Simod-2.3.1','inputs', file_name)
+        print(source_file)
+        print(destination_file)
         shutil.copy(source_file, destination_file)
+        
     except FileNotFoundError as e:
-        print("File not found, make sure the parameter file is correctly spelled")
+        print(e)
         exit(1)
 
     if file_name not in simod_files:
