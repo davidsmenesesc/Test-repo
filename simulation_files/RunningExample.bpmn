@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:definitions xmlns:ns0="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:ns3="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns4="http://www.omg.org/spec/DD/20100524/DI" xmlns:ns5="http://www.qbp-simulator.com/Schema201212" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.omg.org/bpmn20" exporter="ProM. http://www.promtools.org/prom6" exporterVersion="6.3" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd"><ns0:process id="proc_2470654">
+<ns0:startEvent id="node_6486ef30-51b7-42de-8842-fe05bd5fba18" name="" />
+<ns0:endEvent id="node_59be0f90-105c-4e5d-9735-9600ec942808" name="" />
+<ns0:task id="node_54dad3c0-4478-49a7-8224-0b3c91513955" name="EVENT 7 END" />
+<ns0:task id="node_c8f2f43f-5e43-40a9-bff2-97c2789c7f5c" name="Task C" />
+<ns0:task id="node_4cabb5e3-7994-4e83-8bcd-0151732d8b0d" name="EVENT 1 START" />
+<ns0:task id="node_3aeb8eb2-10c2-41ac-806a-60abef65e8ea" name="Task D" />
+<ns0:task id="node_daf1e66c-4bf6-4f67-b5d7-f898cc372ed2" name="Task A" />
+<ns0:task id="node_f3886627-7c86-4fd0-ae53-c73fc60206a4" name="Task B" />
+<ns0:task id="node_30260109-b9c2-4253-b4b0-c48dcac44ff4" name="Task E" />
+<ns0:exclusiveGateway id="node_ad2be3e5-426d-4f2f-ac65-a1352fdb5993" name="" gatewayDirection="Diverging">
+<ns0:incoming>
+node_b87f0ead-e756-4ac5-aae1-f138c71d30a5</ns0:incoming>
+<ns0:outgoing>
+node_65cf086e-a0b9-4374-9c8d-f44b0965118e</ns0:outgoing>
+<ns0:outgoing>
+node_74c2b35e-ecf7-4879-ac28-57d8dcdb915f</ns0:outgoing>
+</ns0:exclusiveGateway>
+<ns0:exclusiveGateway id="node_8d1926b6-3227-4fcb-bd48-9ef5a2300610" name="" gatewayDirection="Converging">
+<ns0:incoming>
+node_b8f8e545-0334-4f23-9977-09ac2c49375b</ns0:incoming>
+<ns0:incoming>
+node_9eb3b14b-004b-4da9-91b5-5be6d2220ad7</ns0:incoming>
+<ns0:outgoing>
+node_db2d81c6-2321-4da8-8a0d-0d321b354b9f</ns0:outgoing>
+</ns0:exclusiveGateway>
+<ns0:sequenceFlow id="node_12e0c1e2-eede-4acc-a357-489d16a360f8" name="" sourceRef="node_6486ef30-51b7-42de-8842-fe05bd5fba18" targetRef="node_4cabb5e3-7994-4e83-8bcd-0151732d8b0d" />
+<ns0:sequenceFlow id="node_dd2c19bc-e16c-48c2-986b-56eab2a3a945" name="" sourceRef="node_54dad3c0-4478-49a7-8224-0b3c91513955" targetRef="node_59be0f90-105c-4e5d-9735-9600ec942808" />
+<ns0:sequenceFlow id="node_06a203c9-4620-4171-ab56-f6869ff5c00f" name="" sourceRef="node_30260109-b9c2-4253-b4b0-c48dcac44ff4" targetRef="node_54dad3c0-4478-49a7-8224-0b3c91513955" />
+<ns0:sequenceFlow id="node_cf9e60ef-3670-4cac-9bbd-232d010f7a33" name="" sourceRef="node_daf1e66c-4bf6-4f67-b5d7-f898cc372ed2" targetRef="node_f3886627-7c86-4fd0-ae53-c73fc60206a4" />
+<ns0:sequenceFlow id="node_9e3d160a-532a-416e-9d1f-0bef7dddf366" name="" sourceRef="node_4cabb5e3-7994-4e83-8bcd-0151732d8b0d" targetRef="node_daf1e66c-4bf6-4f67-b5d7-f898cc372ed2" />
+<ns0:sequenceFlow id="node_b87f0ead-e756-4ac5-aae1-f138c71d30a5" name="" sourceRef="node_f3886627-7c86-4fd0-ae53-c73fc60206a4" targetRef="node_ad2be3e5-426d-4f2f-ac65-a1352fdb5993" />
+<ns0:sequenceFlow id="node_65cf086e-a0b9-4374-9c8d-f44b0965118e" name="" sourceRef="node_ad2be3e5-426d-4f2f-ac65-a1352fdb5993" targetRef="node_c8f2f43f-5e43-40a9-bff2-97c2789c7f5c" />
+<ns0:sequenceFlow id="node_74c2b35e-ecf7-4879-ac28-57d8dcdb915f" name="" sourceRef="node_ad2be3e5-426d-4f2f-ac65-a1352fdb5993" targetRef="node_3aeb8eb2-10c2-41ac-806a-60abef65e8ea" />
+<ns0:sequenceFlow id="node_db2d81c6-2321-4da8-8a0d-0d321b354b9f" name="" sourceRef="node_8d1926b6-3227-4fcb-bd48-9ef5a2300610" targetRef="node_30260109-b9c2-4253-b4b0-c48dcac44ff4" />
+<ns0:sequenceFlow id="node_9eb3b14b-004b-4da9-91b5-5be6d2220ad7" name="" sourceRef="node_c8f2f43f-5e43-40a9-bff2-97c2789c7f5c" targetRef="node_8d1926b6-3227-4fcb-bd48-9ef5a2300610" />
+<ns0:sequenceFlow id="node_b8f8e545-0334-4f23-9977-09ac2c49375b" name="" sourceRef="node_3aeb8eb2-10c2-41ac-806a-60abef65e8ea" targetRef="node_8d1926b6-3227-4fcb-bd48-9ef5a2300610" />
+</ns0:process>
+<ns2:BPMNDiagram id="id_140811099">
+<ns2:BPMNPlane bpmnElement="proc_2470654">
+<ns2:BPMNShape bpmnElement="node_4cabb5e3-7994-4e83-8bcd-0151732d8b0d">
+<ns3:Bounds x="76.0" y="136.0" width="80.0" height="40.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_59be0f90-105c-4e5d-9735-9600ec942808">
+<ns3:Bounds x="1006.0" y="143.5" width="25.0" height="25.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_30260109-b9c2-4253-b4b0-c48dcac44ff4">
+<ns3:Bounds x="746.0" y="136.0" width="80.0" height="40.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_daf1e66c-4bf6-4f67-b5d7-f898cc372ed2">
+<ns3:Bounds x="206.0" y="136.0" width="80.0" height="40.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_3aeb8eb2-10c2-41ac-806a-60abef65e8ea">
+<ns3:Bounds x="541.0" y="171.0" width="80.0" height="40.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_c8f2f43f-5e43-40a9-bff2-97c2789c7f5c">
+<ns3:Bounds x="541.0" y="101.0" width="80.0" height="40.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_f3886627-7c86-4fd0-ae53-c73fc60206a4">
+<ns3:Bounds x="336.0" y="136.0" width="80.0" height="40.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_54dad3c0-4478-49a7-8224-0b3c91513955">
+<ns3:Bounds x="876.0" y="136.0" width="80.0" height="40.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_8d1926b6-3227-4fcb-bd48-9ef5a2300610">
+<ns3:Bounds x="671.0" y="143.5" width="25.0" height="25.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_ad2be3e5-426d-4f2f-ac65-a1352fdb5993">
+<ns3:Bounds x="466.0" y="143.5" width="25.0" height="25.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNShape bpmnElement="node_6486ef30-51b7-42de-8842-fe05bd5fba18">
+<ns3:Bounds x="1.0" y="143.5" width="25.0" height="25.0" />
+<ns2:BPMNLabel />
+</ns2:BPMNShape>
+<ns2:BPMNEdge bpmnElement="node_db2d81c6-2321-4da8-8a0d-0d321b354b9f">
+<ns4:waypoint x="683.5" y="156.0" />
+<ns4:waypoint x="786.0" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_cf9e60ef-3670-4cac-9bbd-232d010f7a33">
+<ns4:waypoint x="246.0" y="156.0" />
+<ns4:waypoint x="376.0" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_74c2b35e-ecf7-4879-ac28-57d8dcdb915f">
+<ns4:waypoint x="478.5" y="156.0" />
+<ns4:waypoint x="581.0" y="191.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_9e3d160a-532a-416e-9d1f-0bef7dddf366">
+<ns4:waypoint x="116.0" y="156.0" />
+<ns4:waypoint x="246.0" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_dd2c19bc-e16c-48c2-986b-56eab2a3a945">
+<ns4:waypoint x="916.0" y="156.0" />
+<ns4:waypoint x="1018.5" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_12e0c1e2-eede-4acc-a357-489d16a360f8">
+<ns4:waypoint x="13.5" y="156.0" />
+<ns4:waypoint x="116.0" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_b8f8e545-0334-4f23-9977-09ac2c49375b">
+<ns4:waypoint x="581.0" y="191.0" />
+<ns4:waypoint x="683.5" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_06a203c9-4620-4171-ab56-f6869ff5c00f">
+<ns4:waypoint x="786.0" y="156.0" />
+<ns4:waypoint x="916.0" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_b87f0ead-e756-4ac5-aae1-f138c71d30a5">
+<ns4:waypoint x="376.0" y="156.0" />
+<ns4:waypoint x="478.5" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_9eb3b14b-004b-4da9-91b5-5be6d2220ad7">
+<ns4:waypoint x="581.0" y="121.0" />
+<ns4:waypoint x="683.5" y="156.0" />
+</ns2:BPMNEdge>
+<ns2:BPMNEdge bpmnElement="node_65cf086e-a0b9-4374-9c8d-f44b0965118e">
+<ns4:waypoint x="478.5" y="156.0" />
+<ns4:waypoint x="581.0" y="121.0" />
+</ns2:BPMNEdge>
+</ns2:BPMNPlane>
+</ns2:BPMNDiagram>
+<ns5:processSimulationInfo currency="EUR" id="qbp_d60080c8-6b85-4418-a08f-798160af4f85" processInstances="35" startDateTime="2023-06-21T09:22:46.060999+00:00">
+<ns5:arrivalRateDistribution arg1="86.2" arg2="0" mean="603.2" type="NORMAL">
+<ns5:timeUnit>seconds</ns5:timeUnit>
+</ns5:arrivalRateDistribution>
+<ns5:timetables>
+<ns5:timetable default="true" id="Discovered_CASES_ARRIVAL_CALENDAR" name="Discovered_CASES_ARRIVAL_CALENDAR">
+<ns5:rules>
+<ns5:rule fromTime="09:00:00.000000+00:00" fromWeekDay="TUESDAY" toTime="16:59:00.000000+00:00" toWeekDay="TUESDAY" />
+<ns5:rule fromTime="09:00:00.000000+00:00" fromWeekDay="WEDNESDAY" toTime="16:59:00.000000+00:00" toWeekDay="WEDNESDAY" />
+<ns5:rule fromTime="09:00:00.000000+00:00" fromWeekDay="THURSDAY" toTime="16:59:00.000000+00:00" toWeekDay="THURSDAY" />
+<ns5:rule fromTime="09:00:00.000000+00:00" fromWeekDay="FRIDAY" toTime="16:59:00.000000+00:00" toWeekDay="FRIDAY" />
+<ns5:rule fromTime="09:00:00.000000+00:00" fromWeekDay="SATURDAY" toTime="16:59:00.000000+00:00" toWeekDay="SATURDAY" />
+</ns5:rules>
+</ns5:timetable>
+<ns5:timetable default="false" id="Discovered_DEFAULT_CALENDAR" name="Discovered_DEFAULT_CALENDAR">
+<ns5:rules>
+<ns5:rule fromTime="09:00:00.000000+00:00" fromWeekDay="FRIDAY" toTime="16:59:00.000000+00:00" toWeekDay="FRIDAY" />
+<ns5:rule fromTime="09:00:00.000000+00:00" fromWeekDay="SATURDAY" toTime="11:59:00.000000+00:00" toWeekDay="SATURDAY" />
+</ns5:rules>
+</ns5:timetable>
+</ns5:timetables>
+<ns5:resources>
+<ns5:resource costPerHour="20" id="QBP_DEFAULT_RESOURCE" name="SYSTEM" timetableId="Discovered_CASES_ARRIVAL_CALENDAR" totalAmount="20" />
+<ns5:resource costPerHour="20" id="qbp_f333afda-d5e3-4a72-bc2f-8f2033a6e2ed" name="Role 1" timetableId="Discovered_DEFAULT_CALENDAR" totalAmount="20" />
+<ns5:resource costPerHour="20" id="qbp_727c02e0-551b-49fb-ac88-d9061cc35e2f" name="Role 2" timetableId="Discovered_DEFAULT_CALENDAR" totalAmount="10" />
+</ns5:resources>
+<ns5:elements>
+<ns5:element elementId="node_3aeb8eb2-10c2-41ac-806a-60abef65e8ea" id="qbp_040565d6-022a-45d2-b1b5-899c9d443938">
+<ns5:durationDistribution arg1="169444939.8" arg2="0" mean="1256.1" type="LOGNORMAL">
+<ns5:timeUnit>seconds</ns5:timeUnit>
+</ns5:durationDistribution>
+<ns5:resourceIds>
+<ns5:resourceId>qbp_727c02e0-551b-49fb-ac88-d9061cc35e2f</ns5:resourceId>
+</ns5:resourceIds>
+</ns5:element>
+<ns5:element elementId="node_daf1e66c-4bf6-4f67-b5d7-f898cc372ed2" id="qbp_211265f4-42e8-4caa-b239-07be33cffe55">
+<ns5:durationDistribution arg1="145791800.4" arg2="0" mean="1189.1" type="LOGNORMAL">
+<ns5:timeUnit>seconds</ns5:timeUnit>
+</ns5:durationDistribution>
+<ns5:resourceIds>
+<ns5:resourceId>qbp_f333afda-d5e3-4a72-bc2f-8f2033a6e2ed</ns5:resourceId>
+</ns5:resourceIds>
+</ns5:element>
+<ns5:element elementId="node_f3886627-7c86-4fd0-ae53-c73fc60206a4" id="qbp_29bd6a02-3bf9-4e23-9374-ffc15068c1ed">
+<ns5:durationDistribution arg1="299318386.0" arg2="0" mean="2670.3" type="LOGNORMAL">
+<ns5:timeUnit>seconds</ns5:timeUnit>
+</ns5:durationDistribution>
+<ns5:resourceIds>
+<ns5:resourceId>qbp_727c02e0-551b-49fb-ac88-d9061cc35e2f</ns5:resourceId>
+</ns5:resourceIds>
+</ns5:element>
+<ns5:element elementId="node_30260109-b9c2-4253-b4b0-c48dcac44ff4" id="qbp_d0b41fb9-66a0-47e9-b9a3-a9a2acf4090f">
+<ns5:durationDistribution arg1="169756547.4" arg2="0" mean="1926.8" type="LOGNORMAL">
+<ns5:timeUnit>seconds</ns5:timeUnit>
+</ns5:durationDistribution>
+<ns5:resourceIds>
+<ns5:resourceId>qbp_727c02e0-551b-49fb-ac88-d9061cc35e2f</ns5:resourceId>
+</ns5:resourceIds>
+</ns5:element>
+<ns5:element elementId="node_c8f2f43f-5e43-40a9-bff2-97c2789c7f5c" id="qbp_5dba3f67-0833-4400-9718-b3d8a409ab95">
+<ns5:durationDistribution arg1="300376667.8" arg2="0" mean="2375.8" type="LOGNORMAL">
+<ns5:timeUnit>seconds</ns5:timeUnit>
+</ns5:durationDistribution>
+<ns5:resourceIds>
+<ns5:resourceId>qbp_f333afda-d5e3-4a72-bc2f-8f2033a6e2ed</ns5:resourceId>
+</ns5:resourceIds>
+</ns5:element>
+<ns5:element elementId="node_4fb9c26e-7265-47c5-9b02-45fbd83a9f3c" id="qbp_a761f05d-a9d8-40d5-a14f-bcd2e112d5e9">
+<ns5:durationDistribution arg1="0" arg2="0" mean="0" type="FIXED">
+<ns5:timeUnit>seconds</ns5:timeUnit>
+</ns5:durationDistribution>
+<ns5:resourceIds>
+<ns5:resourceId>QBP_DEFAULT_RESOURCE</ns5:resourceId>
+</ns5:resourceIds>
+</ns5:element>
+<ns5:element elementId="node_d861df50-2bbb-4b8a-b9c0-1c501c5a37e3" id="qbp_1e307c0d-39da-4b63-95f2-a0f4f173e05a">
+<ns5:durationDistribution arg1="0" arg2="0" mean="0" type="FIXED">
+<ns5:timeUnit>seconds</ns5:timeUnit>
+</ns5:durationDistribution>
+<ns5:resourceIds>
+<ns5:resourceId>QBP_DEFAULT_RESOURCE</ns5:resourceId>
+</ns5:resourceIds>
+</ns5:element>
+</ns5:elements>
+
+<ns5:sequenceFlows><ns5:sequenceFlow elementId="node_65cf086e-a0b9-4374-9c8d-f44b0965118e" executionProbability="0.38" /><ns5:sequenceFlow elementId="node_74c2b35e-ecf7-4879-ac28-57d8dcdb915f" executionProbability="0.62" /></ns5:sequenceFlows></ns5:processSimulationInfo></ns0:definitions>
