@@ -1,0 +1,6 @@
+run_num,metric,sim_val
+0,tsd,0.066322415658503
+0,day_hour_emd,0.0
+0,log_mae,3452741.0
+0,dl,0.075
+0,mae,267016.5
